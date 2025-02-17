@@ -25,9 +25,8 @@
             color: var(--dark);
         }
 
-        /* Updated Navbar Styles */
         .navbar {
-            background: rgba(0, 95, 115, 0.95);
+            background: rgba(0, 95, 115, 0.85); /* Adjusted transparency */
             padding: 0.5rem 2rem;
             position: fixed;
             width: 100%;
@@ -35,12 +34,12 @@
             z-index: 1000;
             backdrop-filter: blur(10px);
             box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-            transition: padding 0.3s ease;
+            transition: padding 0.3s ease, background 0.3s ease; /* Added transition for background */
         }
 
         .navbar.scrolled {
             padding: 0.3rem 2rem;
-            background: rgba(0, 95, 115, 0.98);
+            background: rgba(0, 95, 115, 0.95); /* Adjusted transparency */
         }
 
         .navbar-content {
